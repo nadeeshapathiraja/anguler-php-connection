@@ -12,6 +12,7 @@ if($result = mysqli_query($con,$sql))
   $i = 0;
   while($row = mysqli_fetch_assoc($result))
   {
+    $policies[$i]['userid']    = $row['userid'];
     $policies[$i]['indexnumber']    = $row['indexnumber'];
     $policies[$i]['fullname'] = $row['fullname'];
     $policies[$i]['ininame'] = $row['ininame'];

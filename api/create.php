@@ -11,10 +11,7 @@ if(isset($postdata) && !empty($postdata))
 
 
   // Validate.
-  if(trim($request->number) === '' || (float)$request->amount < 0)
-  {
-    return http_response_code(400);
-  }
+ 
 
   // Sanitize.
   
